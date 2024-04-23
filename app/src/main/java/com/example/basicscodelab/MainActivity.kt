@@ -101,15 +101,6 @@ private fun Greetings(
 
 
 
-@Preview(showBackground = true, widthDp = 320, heightDp = 320)
-@Composable
-fun OnboardingPreview() {
-    BasicsCodelabTheme {
-        OnboardingScreen(onContinueClicked = {})
-    }
-}
-
-
 @Composable
 private fun Greeting(name: String, modifier: Modifier = Modifier) {
     Card(
@@ -182,6 +173,16 @@ fun GreetingPreview() {
         Greetings()
     }
 }
+
+
+@Preview(showBackground = true, widthDp = 320, heightDp = 320)
+@Composable
+fun OnboardingPreview() {
+    BasicsCodelabTheme {
+        OnboardingScreen(onContinueClicked = {})
+    }
+}
+
 
 @Preview
 @Composable
